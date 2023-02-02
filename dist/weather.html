@@ -13,9 +13,8 @@
     <!-- FontWesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/api.css">
+    <link rel="stylesheet" href="./css/weather.css">
     <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="stylesheet" href="./css/responsive-api.css">
     <link rel="stylesheet" href="./css/reset.css">
     <title> Weather Boy </title>
 </head>
@@ -37,17 +36,21 @@
             </div>
             <div id="mobile_links">
                 <h1 id="menu_open_btn"> <i class="fa fas-bar"> +</i></h1>
-                 <div id="navbar">
-                     <button id="menu_close_btn">X</button>
-                     <ul>
-                         <li><a class="active" href="./index.html">home</a></li>
-                         <li><a href="./api.html">weather</a></li>
-                         <li><a href="./about.html">about</a></li>
-                     </ul>
-                 </div>
-             </div>
+                <div id="navbar">
+                    <button id="menu_close_btn">X</button>
+                    <ul>
+                        <li><a class="active" href="./index.html">home</a></li>
+                        <li><a href="./api.html">weather</a></li>
+                        <li><a href="./about.html">about</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <main>
+            <input type="text" placeholder="Enter Your city Name">
+            <!-- <button type="submit">✔</button> -->
+            <button type="submit">Search</button>
+
             <div class="col_1" id="result">
                 <div class="row">
                     <h3>City :</h3>
@@ -67,4 +70,4 @@
     <script src="./js/script.js"></script>
 </body>
 
-</html> 
+</html>
