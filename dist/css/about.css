@@ -1,0 +1,88 @@
+a,
+li {
+  text-decoration: none;
+  list-style-type: none;
+  border: none;
+  outline: none;
+  color: #000000;
+  font-weight: 300;
+}
+
+.active {
+  color: #eea359;
+}
+
+body {
+  font-family: "Inter";
+  width: 100vw;
+  background-color: #efefea;
+}
+
+section {
+  height: 100%;
+  padding: 0% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+section nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+section nav #logo {
+  width: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+section nav #logo a {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #eea359;
+}
+section nav #desktop_links {
+  width: 40%;
+}
+section nav #desktop_links ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+section main {
+  text-align: center;
+}
+section main h1 {
+  text-align: center;
+  font-size: 8rem;
+  letter-spacing: 2px;
+  font-weight: 100;
+  margin: 30px;
+}
+section main .cta_btn {
+  text-transform: capitalize;
+  border: 2px solid #000000;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin: 10px;
+}
+section main .cta_btn:hover {
+  background-color: #c0eb74;
+  border: 2px solid #c0eb74;
+}
+section footer {
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 20px 0px;
+}
+
+/*# sourceMappingURL=about.css.map */
