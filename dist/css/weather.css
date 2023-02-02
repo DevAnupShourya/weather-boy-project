@@ -70,6 +70,9 @@ section main input {
   border-radius: 30px;
   padding: 10px 20px;
 }
+section main input::placeholder {
+  letter-spacing: 5px;
+}
 section main button {
   width: 80%;
   letter-spacing: 2px;
@@ -83,7 +86,9 @@ section main button {
   background-color: #c0eb74;
 }
 section main button:hover {
-  border: 2px solid #c0eb74;
+  border: 2px solid #000000;
+  background-color: #000000;
+  color: #c0eb74;
 }
 section main #result {
   width: 100%;
@@ -92,9 +97,7 @@ section main #result {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-section main #result .row {
-  width: 50%;
+  flex: auto;
 }
 section main #result .row h3 {
   font-weight: 300;
@@ -102,6 +105,10 @@ section main #result .row h3 {
 section main #result .row h1 {
   font-size: 6rem;
   letter-spacing: 2px;
+}
+section main .data_hide {
+  display: none;
+  transition: all 0.5s linear;
 }
 section footer {
   width: 100%;

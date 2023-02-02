@@ -22,42 +22,17 @@
 
 <body>
     <section>
-        <nav>
-            <div id="logo">
-                <!-- <a href="/">Weather Boy</a> -->
-                <a href="/">&Wfr;</a>
-            </div>
-            <div id="desktop_links">
-                <ul>
-                    <li><a class="active" href="./index.html">home</a></li>
-                    <li><a href="./search.html">weather</a></li>
-                    <li><a href="./about.html">about</a></li>
-                </ul>
-            </div>
-            <div id="mobile_links">
-               <h1 id="menu_open_btn"> <i class="fa fas-bar"> +</i></h1>
-                <div id="navbar">
-                    <button id="menu_close_btn">X</button>
-                    <ul>
-                        <li><a class="active" href="./index.html">home</a></li>
-                        <li><a href="./api.html">weather</a></li>
-                        <li><a href="./about.html">about</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        {{>nav}}
         <main>
             <div id="hero_text">
                 <h1>Know <br> weather of <br> your city</h1>
-                <a class="cta_btn" href="./api.html">check now</a>
+                <a class="cta_btn" href="/weather">check now</a>
             </div>
             <div id="hero_img">
                 <img src="./imgs/hero-img.png" alt="">
             </div>
         </main>
-        <footer>
-            <p>made with &hearts; by <a href="https://github.com/AnupShouryaDev" target="_blank">YourWebDevAnup</a></p>
-        </footer>
+        {{>footer}}
     </section>
 
     <script src="./js/script.js"></script>

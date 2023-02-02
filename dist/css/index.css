@@ -95,6 +95,7 @@ section main #hero_img {
 }
 section main #hero_img img {
   width: 100%;
+  filter: drop-shadow(0 0.5rem 2rem #eea359);
 }
 section footer {
   width: 100%;

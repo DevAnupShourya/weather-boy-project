@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- FontWesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/weather.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title> Weather Boy </title>
+</head>
+<!-- 20.20 -->
+
+<body>
+    <section>
+        {{>nav}}
+        <main>
+            <form>
+                {{!-- ! here --}}
+                <input id="city_name" type="text" placeholder="Enter Your city Name" autocomplete="off">
+                <!-- <button type="submit">✔</button> -->
+                <button id="search_btn" type="submit" value="search">Search</button>
+            </form>
+
+            <div class="data_hide" id="data_box">
+                <div class="col_1" id="result">
+                    <div class="row">
+                        <h3>Country :</h3>
+                        <h1 id="country"></h1>
+                    </div>
+                    <div class="row">
+                        <h3>City :</h3>
+                        <h1 id="city"></h1>
+                    </div>
+                    <div class="row">
+                        <h3>Tempreture :</h3>
+                        <h1><span id="temp"></span><sup>o</sup>C</h1>
+                    </div>
+                </div>
+                <p>Last Updated <b><span id="currdate"></span></b></p>
+            </div>
+        </main>
+        {{>footer}}
+    </section>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

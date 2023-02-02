@@ -17,11 +17,14 @@
     width: 8%;
   }
   #mobile_links h1 {
-    width: 100%;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     border: 1px solid #000000;
     padding: 10px 20px;
     border-radius: 30px;
+    cursor: pointer;
   }
   #mobile_links button:hover {
     color: #eea359;
@@ -47,6 +50,7 @@
     padding: 10px 20px;
     border-radius: 30px;
     margin-bottom: 2%;
+    cursor: pointer;
   }
   #mobile_links #navbar ul {
     text-transform: uppercase;
