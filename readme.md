@@ -1,30 +1,17 @@
-# Project Title
-A brief description of what this project does and who it's for
+# [Weather-Boy : Check Weather]()
+![Video]()
 
-## How To Start
-### To Initialize TypeScript
-```bash
-  tsc --init
-```
-### Not Change "rootDir" and "outDir" variable values.
+Check Current Tempreture Of your city By Just typing the name of city. Made by SCSS, TS, NodeJS & ExpressJS(Handlebars) .
 
-### To Initialize SCSS
+<!-- #### For SCSS Compilation 
 ```bash
   sass --watch src/scss/:dist/css/
-```
-### Now Start Coding!!
+``` -->
 
-### To Use Icons 
--[FontAwesome]()
-
-### Now Initialize Git
-```
-  ....
-```
 ## Contact Me
  - [E-Mail](mailto:contact.yourwebdev@gmail.com)
  - [Github](https://github.com/AnupShouryaDev)
  - [LinkedIn](https://www.linkedin.com/in/anup-shourya-141b3b1b5/)
 
-
-
+## Future RoadMap
+- Add More Properties To show in Weather Page.
