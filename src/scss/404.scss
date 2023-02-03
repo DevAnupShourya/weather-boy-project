@@ -1,0 +1,77 @@
+// ? File Imports
+@import './mixins';
+@import './variables';
+
+// ? new rulesets
+a,
+li {
+    @include no_deco;
+    color: $color_4;
+    font-weight: 300;
+}
+
+.active {
+    color: $color_3;
+}
+
+body {
+    font-family: 'Inter';
+    width: 100vw;
+    background-color: $color_1;
+}
+
+
+// ? page style starts
+section {
+    height: 100%;
+
+    padding: 0% 5%;
+    @include flex(column, space-between);
+
+    nav {
+        width: 100%;
+        @include flex(row, space-between);
+
+        #logo {
+            width: 10%;
+            @include flex(row, space-around);
+
+            a {
+                font-size: 4rem;
+                font-weight: 900;
+                color: $color_3;
+            }
+        }
+
+        #desktop_links {
+            width: 40%;
+
+            ul {
+                @include flex(row, space-between);
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+
+        }
+    }
+
+    main {
+        text-align: center;
+
+        h1 {
+            text-align: center;
+            font-size: 8rem;
+            letter-spacing: 2px;
+            font-weight: 100;
+            margin: 30px;
+        }
+    }
+
+    footer {
+        width: 100%;
+        text-align: center;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        padding: 20px 0px;
+    }
+}

@@ -1,0 +1,15 @@
+@mixin no_deco{
+    text-decoration: none;
+    list-style-type: none;
+    border: none;
+    outline: none;
+}
+@mixin b{
+    border: 1px solid red;
+}
+@mixin flex($d, $s){
+    display: flex;
+    flex-direction: $d;
+    justify-content: $s;
+    align-items: center;
+}

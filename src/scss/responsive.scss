@@ -1,0 +1,121 @@
+@import './variables';
+@import './mixins';
+
+@media screen and (min-width: $mediaUltraMaxWidth) {
+
+    // for Ultra Large Devices
+    #mobile_links {
+        display: none;
+    }
+}
+
+@media (min-width: $mediaMaxWidth) and (max-width: $mediaUltraMaxWidth) {
+    // for Desktops
+
+    #mobile_links {
+        display: none;
+    }
+}
+
+@media screen and (max-width: $mediaMaxWidth) {
+
+    // for tablets
+    #desktop_links {
+        display: none;
+    }
+
+    #mobile_links {
+        display: block !important;
+        width: 8%;
+
+        h1 {
+            @include flex(row,space-around);
+            border: 1px solid $color_4;
+            padding: 10px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            color: $color_3;
+            border: 1px solid $color_3;
+        }
+
+        #navbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: $color_2;
+            @include flex(column, space-around);
+            padding: 4% 0%;
+            transition: width 1s 0ms ease-in-out;
+            display: none;
+
+            button {
+                text-align: center;
+                border: 1px solid $color_4;
+                padding: 10px 20px;
+                border-radius: 30px;
+                margin-bottom: 2%;
+                cursor: pointer;
+
+            }
+
+            ul {
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                text-align: center;
+            }
+
+
+        }
+    }
+
+    main {
+        #result {
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width: $mediaMinWidth) {
+
+    // for Mobiles
+    section {
+        padding: 5% 10%;
+
+        main {
+            width: 100% !important;
+
+            #hero_text {
+                width: 100% !important;
+
+                h1 {
+                    font-size: 3rem !important;
+                }
+            }
+
+            #hero_img {
+
+                img {
+                    display: none;
+                }
+            }
+
+            #result {
+                flex-direction: column;
+
+                .row {
+                    width: 100%;
+
+                    h1 {
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
