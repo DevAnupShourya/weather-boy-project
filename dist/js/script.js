@@ -45,10 +45,10 @@ const getInfo = (e) => __awaiter(void 0, void 0, void 0, function* () {
             const url = `https://api.openweathermap.org/data/2.5/weather?q=${city_name_val}&units=metric&appid=8a9cffa1507f6a96d8f62c9781ae096f`;
             const res = yield fetch(url);
             const data = yield res.json();
-            let tempreture = data.main.temp;
+            let temperature = data.main.temp;
             let city = data.name;
             let country = data.sys.country;
-            show_Data(tempreture, city, country);
+            show_Data(temperature, city, country);
         }
         catch (error) {
             if (error == "TypeError: Cannot read properties of undefined (reading 'temp')") {

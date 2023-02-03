@@ -1,7 +1,7 @@
 # [Weather-Boy : Check Weather]()
 ![Video]()
 
-Check Current Tempreture Of your city By Just typing the name of city. Made by SCSS, TS, NodeJS & ExpressJS(Handlebars) .
+Check Current Temperature Of your city By Just typing the name of city. Made by SCSS, TS, NodeJS & ExpressJS(Handlebars) .
 
 <!-- #### For SCSS Compilation 
 ```bash
