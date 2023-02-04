@@ -55,5 +55,5 @@ const getInfo = async (e: Event) => {
         }
     }
 }
-
+// ! Everything starts from here 
 search_btn.addEventListener('click', (e) => { getInfo(e); });
